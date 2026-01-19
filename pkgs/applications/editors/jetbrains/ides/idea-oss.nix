@@ -65,6 +65,7 @@ mkJetBrainsProduct {
       IDE for Java SE, Groovy & Scala development Powerful environment for building Google Android apps Integration with JUnit, TestNG, popular SCMs, Ant & Maven.
       Also known as IntelliJ.
     '';
+    inherit (src.meta) platforms;
     maintainers = with lib.maintainers; [
       gytis-ivaskevicius
       tymscar

@@ -312,6 +312,7 @@ stdenvNoCC.mkDerivation rec {
     runHook postInstall
   '';
 
+  meta.platforms = jbr.meta.platforms;
   passthru = {
     inherit
       version

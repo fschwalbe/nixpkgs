@@ -59,6 +59,7 @@ in
       In addition, the IDE provides high-class capabilities for professional Web development with Django framework and Google App Engine.
       It has powerful coding assistance, navigation, a lot of refactoring features, tight integration with various Version Control Systems, Unit testing and powerful Debugger.
     '';
+    inherit (src.meta) platforms;
     maintainers = with lib.maintainers; [
       tymscar
     ];
